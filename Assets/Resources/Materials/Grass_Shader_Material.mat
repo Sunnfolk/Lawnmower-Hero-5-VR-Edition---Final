@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Grass_Shader_Material
+  m_Shader: {fileID: 4800000, guid: 2c2cefb6802b6cd429dfbe4041764676, type: 3}
+  m_ShaderKeywords: USE_CS USE_RT USE_SS USE_VR
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Distortion:
+        m_Texture: {fileID: 2800000, guid: b97e4be25c3932344b0b5b0ffe62377d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GrassTex:
+        m_Texture: {fileID: 2800000, guid: 8250ff09005548d488639d4bfc291cff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GroundTex:
+        m_Texture: {fileID: 2800000, guid: 4e1d764fa7e47f34eae88e37253c2542, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 4e1d764fa7e47f34eae88e37253c2542, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 1, y: 1}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoGrassTex:
+        m_Texture: {fileID: 8400000, guid: 867d42bcf9f6a41f19a58854548607ed, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: 369f6fef0ebe1f14aa6ed86d8e55cc6e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaDstBlend: 0
+    - _AlphaSrcBlend: 1
+    - _BlendMode: 0
+    - _BumpScale: 1
+    - _CullMode: 2
+    - _CullModeForward: 2
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DiffusionProfile: 0
+    - _DiffusionProfileHash: 0
+    - _DstBlend: 0
+    - _FadeDistanceEnd: 50
+    - _FadeDistanceStart: 20
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GrassCut: 0
+    - _GrassSaturation: 4
+    - _GrassShading: 0
+    - _GrassThinness: 0.54
+    - _GrassThinnessIntersection: 0.722
+    - _LightIntensity: 1
+    - _Metallic: 0
+    - _MinimumNumberStacks: 17
+    - _Mode: 0
+    - _NearCameraSmoosh: 1
+    - _NoisePower: 2
+    - _NumberOfStacks: 10
+    - _OcclusionStrength: 1
+    - _OffsetValue: 2.2
+    - _Parallax: 0.02
+    - _ProceduralDistance: 20.02
+    - _ProceduralStrength: 15.9
+    - _RTEffect: 1
+    - _RimMax: 0.945
+    - _RimMin: 0.568
+    - _RimPower: 0
+    - _ShadowFuziness: 1
+    - _ShadowMax: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefDistortionVec: 4
+    - _StencilRefGBuffer: 2
+    - _StencilRefMV: 32
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskGBuffer: 3
+    - _StencilWriteMaskMV: 32
+    - _SurfaceType: 0
+    - _TilingN1: 100
+    - _TilingN2: -2
+    - _TilingN3: 0.7
+    - _TransparentCullMode: 2
+    - _TransparentZWrite: 0
+    - _UVSec: 0
+    - _UseAmbientLight: 0
+    - _UseCS: 1
+    - _UsePR: 0
+    - _UseRT: 1
+    - _UseShadow: 0
+    - _UseShadowCast: 0
+    - _UseSuperStack: 1
+    - _UseTP: 0
+    - _UseVR: 1
+    - _UseWC: 0
+    - _WindForce: 0.2
+    - _WindMovement: 0.07
+    - _WorldRotation: 0
+    - _WorldScale: 31
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZTestModeDistortion: 8
+    - _ZTestTransparent: 8
+    - _ZWrite: 1
+    - __NumberOfStacks: 1
+    m_Colors:
+    - _Color: {r: 0.14440194, g: 0.5566038, b: 0.1985881, a: 1}
+    - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GroundColor: {r: 0, g: 0.6132076, b: 0.0943397, a: 1}
+    - _OffsetVector: {r: 0, g: 0, b: 0, a: 0}
+    - _PJShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ProjectedShadowColor: {r: 0, g: 0.1792453, b: 0.13135996, a: 1}
+    - _RimColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SelfShadowColor: {r: 0.04004984, g: 0.18867922, b: 0.12460419, a: 1}
+  m_BuildTextureStacks: []

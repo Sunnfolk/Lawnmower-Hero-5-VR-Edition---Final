@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Resources/Textures/Materials/Particle mat.mat.meta
+guid: 86537c72410104938a123e6dbddf13e1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+=======
+guid: b0d6255410e5091458341e2f8fdadcbd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+>>>>>>> VR-+-Arcade:Assets/Scripts/Simen/scoreCounter.asset.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

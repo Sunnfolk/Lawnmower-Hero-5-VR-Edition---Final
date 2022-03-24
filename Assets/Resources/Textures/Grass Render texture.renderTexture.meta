@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Resources/Textures/Camera Rendertexture.renderTexture.meta
+guid: 867d42bcf9f6a41f19a58854548607ed
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 8400000
+=======
+guid: e1446f06c1475f644b3c91998bcd69bb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+>>>>>>> VR-+-Arcade:Assets/Resources/Conflict System and Arcade system/Simen/EnemyMaterials.mat.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -430,8 +430,8 @@ MonoBehaviour:
   prefab: {fileID: 1408731620}
   attachPoint: {fileID: 967381576}
   spawn:
-    actionPath: /actions//in/InteractUI
-    needsReinit: 1
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
 --- !u!114 &332366465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1756,8 +1756,8 @@ MonoBehaviour:
   prefab: {fileID: 1408731620}
   attachPoint: {fileID: 1820526387}
   spawn:
-    actionPath: /actions//in/InteractUI
-    needsReinit: 1
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
 --- !u!114 &1110379729
 MonoBehaviour:
   m_ObjectHideFlags: 0
