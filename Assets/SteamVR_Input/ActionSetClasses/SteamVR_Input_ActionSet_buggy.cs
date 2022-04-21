@@ -13,7 +13,7 @@ namespace Valve.VR
     using System;
     using UnityEngine;
     
-    
+   /* 
     public class SteamVR_Input_ActionSet_buggy : Valve.VR.SteamVR_ActionSet
     {
         
@@ -48,5 +48,5 @@ namespace Valve.VR
                 return SteamVR_Actions.buggy_Reset;
             }
         }
-    }
+    }*/
 }
