@@ -826,9 +826,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b38ed09f5932f498ea778a480d914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textEntry: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
+  canSubmitScore: 0
   timer: {fileID: 0}
+  pointer: {fileID: 0}
 --- !u!114 &1994416724562422784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,10 +846,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   score: {fileID: 11400000, guid: b0d6255410e5091458341e2f8fdadcbd, type: 2}
-  killPointsWasp: 0
-  killPointsGnome: 0
-  loosePointsBee: 0
-  loosePointsGoodGnome: 0
+  totalScore: 0
+  killPoints: 0
+  loosePoints: 0
+  grassPoints: 0
 --- !u!114 &1994416724562422787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,6 +870,8 @@ MonoBehaviour:
   rowParent: {fileID: 0}
   rowPreFabHighScore: {fileID: 0}
   firstPlace: {fileID: 0}
+  _timer: {fileID: 0}
+  _sceneController: {fileID: 0}
 --- !u!1 &1994416724662824362
 GameObject:
   m_ObjectHideFlags: 0
@@ -2891,9 +2896,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b38ed09f5932f498ea778a480d914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textEntry: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
+  canSubmitScore: 0
   timer: {fileID: 0}
+  pointer: {fileID: 0}
 --- !u!114 &2386694879486543307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2908,10 +2916,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   score: {fileID: 11400000, guid: b0d6255410e5091458341e2f8fdadcbd, type: 2}
-  killPointsWasp: 0
-  killPointsGnome: 0
-  loosePointsBee: 0
-  loosePointsGoodGnome: 0
+  totalScore: 0
+  killPoints: 0
+  loosePoints: 0
+  grassPoints: 0
 --- !u!114 &3082213210183677419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2933,6 +2941,7 @@ MonoBehaviour:
   rowPreFabHighScore: {fileID: 4006076561353992245, guid: 2f3cb9844c046134b9deda1854d561ae,
     type: 3}
   firstPlace: {fileID: 0}
+  _sceneController: {fileID: 0}
 --- !u!1 &2430970490838542045
 GameObject:
   m_ObjectHideFlags: 0
@@ -4272,9 +4281,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b38ed09f5932f498ea778a480d914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textEntry: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
+  canSubmitScore: 0
   timer: {fileID: 0}
+  pointer: {fileID: 0}
 --- !u!114 &2430970492522982294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4289,10 +4301,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   score: {fileID: 11400000, guid: b0d6255410e5091458341e2f8fdadcbd, type: 2}
-  killPointsWasp: 0
-  killPointsGnome: 0
-  loosePointsBee: 0
-  loosePointsGoodGnome: 0
+  totalScore: 0
+  killPoints: 0
+  loosePoints: 0
+  grassPoints: 0
 --- !u!114 &862776315608512673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4313,6 +4325,7 @@ MonoBehaviour:
   rowParent: {fileID: 2430970491723453001}
   rowPreFabHighScore: {fileID: 0}
   firstPlace: {fileID: 0}
+  _sceneController: {fileID: 0}
 --- !u!1 &2430970492536450570
 GameObject:
   m_ObjectHideFlags: 0
@@ -6150,9 +6163,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b38ed09f5932f498ea778a480d914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textEntry: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
+  canSubmitScore: 0
   timer: {fileID: 0}
+  pointer: {fileID: 0}
 --- !u!114 &4641305400980618250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6167,10 +6183,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   score: {fileID: 11400000, guid: b0d6255410e5091458341e2f8fdadcbd, type: 2}
-  killPointsWasp: 0
-  killPointsGnome: 0
-  loosePointsBee: 0
-  loosePointsGoodGnome: 0
+  totalScore: 0
+  killPoints: 0
+  loosePoints: 0
+  grassPoints: 0
 --- !u!114 &3853142915018338524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6192,6 +6208,7 @@ MonoBehaviour:
   rowPreFabHighScore: {fileID: 4006076561353992245, guid: 2f3cb9844c046134b9deda1854d561ae,
     type: 3}
   firstPlace: {fileID: 4641305401246539492}
+  _sceneController: {fileID: 0}
 --- !u!1 &4641305401246539493
 GameObject:
   m_ObjectHideFlags: 0
@@ -6487,9 +6504,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b38ed09f5932f498ea778a480d914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textEntry: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
+  canSubmitScore: 0
   timer: {fileID: 0}
+  pointer: {fileID: 0}
 --- !u!114 &6692284988010201233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6504,10 +6524,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   score: {fileID: 11400000, guid: b0d6255410e5091458341e2f8fdadcbd, type: 2}
-  killPointsWasp: 0
-  killPointsGnome: 0
-  loosePointsBee: 0
-  loosePointsGoodGnome: 0
+  totalScore: 0
+  killPoints: 0
+  loosePoints: 0
+  grassPoints: 0
 --- !u!114 &6692284988010201230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6528,6 +6548,8 @@ MonoBehaviour:
   rowParent: {fileID: 0}
   rowPreFabHighScore: {fileID: 0}
   firstPlace: {fileID: 0}
+  _timer: {fileID: 0}
+  _sceneController: {fileID: 0}
 --- !u!1 &6700774898106468017
 GameObject:
   m_ObjectHideFlags: 0
@@ -7125,9 +7147,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b38ed09f5932f498ea778a480d914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textEntry: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
+  canSubmitScore: 0
   timer: {fileID: 0}
+  pointer: {fileID: 0}
 --- !u!114 &6700774899234143444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7142,10 +7167,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   score: {fileID: 11400000, guid: b0d6255410e5091458341e2f8fdadcbd, type: 2}
-  killPointsWasp: 0
-  killPointsGnome: 0
-  loosePointsBee: 0
-  loosePointsGoodGnome: 0
+  totalScore: 0
+  killPoints: 0
+  loosePoints: 0
+  grassPoints: 0
 --- !u!114 &6700774899234143435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7166,6 +7191,8 @@ MonoBehaviour:
   rowParent: {fileID: 6700774900033881355}
   rowPreFabHighScore: {fileID: 0}
   firstPlace: {fileID: 0}
+  _timer: {fileID: 0}
+  _sceneController: {fileID: 0}
 --- !u!1 &6700774899254491464
 GameObject:
   m_ObjectHideFlags: 0
@@ -8837,9 +8864,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b38ed09f5932f498ea778a480d914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textEntry: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
+  canSubmitScore: 0
   timer: {fileID: 0}
+  pointer: {fileID: 0}
 --- !u!114 &8269209200998904027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8854,10 +8884,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   score: {fileID: 11400000, guid: b0d6255410e5091458341e2f8fdadcbd, type: 2}
-  killPointsWasp: 0
-  killPointsGnome: 0
-  loosePointsBee: 0
-  loosePointsGoodGnome: 0
+  totalScore: 0
+  killPoints: 0
+  loosePoints: 0
+  grassPoints: 0
 --- !u!114 &1004453721297784934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8879,6 +8909,7 @@ MonoBehaviour:
   rowPreFabHighScore: {fileID: 4006076561353992245, guid: 2f3cb9844c046134b9deda1854d561ae,
     type: 3}
   firstPlace: {fileID: 8269209201252078133}
+  _sceneController: {fileID: 0}
 --- !u!1 &8269209201011651911
 GameObject:
   m_ObjectHideFlags: 0
@@ -11300,9 +11331,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b38ed09f5932f498ea778a480d914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textEntry: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
+  canSubmitScore: 0
   timer: {fileID: 0}
+  pointer: {fileID: 0}
 --- !u!114 &8480239162127516305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11317,10 +11351,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   score: {fileID: 11400000, guid: b0d6255410e5091458341e2f8fdadcbd, type: 2}
-  killPointsWasp: 0
-  killPointsGnome: 0
-  loosePointsBee: 0
-  loosePointsGoodGnome: 0
+  totalScore: 0
+  killPoints: 0
+  loosePoints: 0
+  grassPoints: 0
 --- !u!114 &976196198922815427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11342,6 +11376,7 @@ MonoBehaviour:
   rowPreFabHighScore: {fileID: 4006076561353992245, guid: 30a9940b81236423ea48433f141c2858,
     type: 3}
   firstPlace: {fileID: 0}
+  _sceneController: {fileID: 0}
 --- !u!1 &8480239162139150093
 GameObject:
   m_ObjectHideFlags: 0

@@ -732,9 +732,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b38ed09f5932f498ea778a480d914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textEntry: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
+  canSubmitScore: 0
   timer: {fileID: 0}
+  pointer: {fileID: 0}
 --- !u!114 &4229628994779539819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +752,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   score: {fileID: 11400000, guid: b0d6255410e5091458341e2f8fdadcbd, type: 2}
+  totalScore: 0
+  killPoints: 0
+  loosePoints: 0
+  grassPoints: 0
 --- !u!114 &3561133324716955979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,6 +777,7 @@ MonoBehaviour:
   rowPreFabHighScore: {fileID: 4006076561353992245, guid: 2f3cb9844c046134b9deda1854d561ae,
     type: 3}
   firstPlace: {fileID: 4229628995046280069}
+  _sceneController: {fileID: 0}
 --- !u!1 &4229628995046280068
 GameObject:
   m_ObjectHideFlags: 0
