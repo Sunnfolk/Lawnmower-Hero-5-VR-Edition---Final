@@ -17,11 +17,35 @@ namespace Valve.VR
     public class SteamVR_Input_ActionSet_default : Valve.VR.SteamVR_ActionSet
     {
         
-        public virtual SteamVR_Action_Boolean TriggerButton
+        public virtual SteamVR_Action_Boolean InteractUI
         {
             get
             {
-                return SteamVR_Actions.default_TriggerButton;
+                return SteamVR_Actions.default_InteractUI;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean Teleport
+        {
+            get
+            {
+                return SteamVR_Actions.default_Teleport;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean GrabPinch
+        {
+            get
+            {
+                return SteamVR_Actions.default_GrabPinch;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean GrabGrip
+        {
+            get
+            {
+                return SteamVR_Actions.default_GrabGrip;
             }
         }
         
@@ -33,27 +57,51 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean TrackpadButton
+        public virtual SteamVR_Action_Skeleton SkeletonLeftHand
         {
             get
             {
-                return SteamVR_Actions.default_TrackpadButton;
+                return SteamVR_Actions.default_SkeletonLeftHand;
             }
         }
         
-        public virtual SteamVR_Action_Boolean MenuButton
+        public virtual SteamVR_Action_Skeleton SkeletonRightHand
         {
             get
             {
-                return SteamVR_Actions.default_MenuButton;
+                return SteamVR_Actions.default_SkeletonRightHand;
             }
         }
         
-        public virtual SteamVR_Action_Boolean GripButton
+        public virtual SteamVR_Action_Single Squeeze
         {
             get
             {
-                return SteamVR_Actions.default_GripButton;
+                return SteamVR_Actions.default_Squeeze;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean HeadsetOnHead
+        {
+            get
+            {
+                return SteamVR_Actions.default_HeadsetOnHead;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean SnapTurnLeft
+        {
+            get
+            {
+                return SteamVR_Actions.default_SnapTurnLeft;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean SnapTurnRight
+        {
+            get
+            {
+                return SteamVR_Actions.default_SnapTurnRight;
             }
         }
         
