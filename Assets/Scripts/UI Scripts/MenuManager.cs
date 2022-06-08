@@ -57,7 +57,7 @@ public class MenuManager : MonoBehaviour
 
         SelectedScoreboard();
         
-        print(difficultyIndex);
+        //print(difficultyIndex);
         
     }
 

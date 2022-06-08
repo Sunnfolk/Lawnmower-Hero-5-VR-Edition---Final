@@ -42,7 +42,7 @@ public class scoreManager : MonoBehaviour
     private void Update()
     {
         SetCountText();
-        print(score.score + score.score2);
+        //print(score.score + score.score2);
         totalScore = (int) (score.score + score.score2);
     }
     
