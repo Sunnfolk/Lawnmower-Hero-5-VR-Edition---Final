@@ -2,13 +2,13 @@
   "source": "Unity",
   "applications": [
     {
-      "app_key": "application.generated.unity.lawnmowerherodummyproject.exe",
+      "app_key": "application.generated.unity.lawnmowerhero5vredition.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\Ander\\Documents\\UNITY\\Downloads\\Lawnmower-Hero-5-VR-Edition---Final\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\Anders\\Documents\\GitHub\\Lawnmower-Hero-5-VR-Edition---Final\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
-          "name": "LawnmowerHeroDummyProject [Testing]"
+          "name": "Lawnmower hero 5 VR edition [Testing]"
         }
       }
     }
