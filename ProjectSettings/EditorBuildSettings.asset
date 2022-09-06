@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: b00502cda0ab27044bfc2434965142cd
   - enabled: 1
-    path: Assets/Scenes/Easy/Level_Easy_Small.unity
+    path: Assets/Scenes/New And Imrpoved/Level 1 - Lonely Lawn.unity
     guid: 5412589c56e8cf845988b7210945e963
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
