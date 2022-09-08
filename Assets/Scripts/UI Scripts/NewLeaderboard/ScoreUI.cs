@@ -11,7 +11,6 @@ public class ScoreUI : MonoBehaviour
 
     private void Start()
     {
-
         var scores = scoreManager.GetHighScores().ToArray();
         for (int i = 0; i < scores.Length; i++)
         {

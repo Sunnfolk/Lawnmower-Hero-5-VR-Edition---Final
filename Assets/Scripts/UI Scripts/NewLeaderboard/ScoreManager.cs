@@ -40,4 +40,6 @@ public class ScoreManager : MonoBehaviour
         var json = JsonUtility.ToJson(sd);
         PlayerPrefs.SetString("scores", json);
     }
+    //This is the code we use to add score.
+    //scoreManager.AddScore(new Score("Anders2", 200));
 }
