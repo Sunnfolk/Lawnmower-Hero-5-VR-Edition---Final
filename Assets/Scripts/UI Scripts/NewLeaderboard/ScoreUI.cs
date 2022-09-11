@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class ScoreUI : MonoBehaviour
 {
+    //This script is placed on the "Content" gameobject in the main menu. It handles instantiating of the rows and inserting the scores
+    
     public RowUI rowUI;
     public ScoreManager scoreManager;
 

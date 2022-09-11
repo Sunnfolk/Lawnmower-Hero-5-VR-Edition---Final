@@ -7,6 +7,7 @@ using UnityEngine;
 [Serializable]
 public class Score
 {
+    //Serializable script. Not placed on a gameobject.
     public string name;
     public float score;
 

@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+    //Place script on an empty gameobject in your scene.
+    
     private ScoreData sd;
 
     private void Awake()
