@@ -13,8 +13,8 @@ Material:
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -49,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GrassMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8400000, guid: eb034c54e33a4d14abe10974a645a387, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -91,14 +91,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _BendDelta: 0.2
-    - _BladeBendCurve: 2
+    - _BendDelta: 0
+    - _BladeBendCurve: 1.2
     - _BladeBendDistance: 0.38
-    - _BladeHeightMax: 0.2
-    - _BladeHeightMin: 0.1
+    - _BladeHeightMax: 0.27
+    - _BladeHeightMin: 0.11
     - _BladeSegments: 3
-    - _BladeWidthMax: 0.05
-    - _BladeWidthMin: 0.02
+    - _BladeWidthMax: 0.0299
+    - _BladeWidthMin: 0.0045
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -112,7 +112,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _GrassFalloff: 0.05
+    - _GrassFalloff: 0.021
     - _GrassThreshold: 0.5
     - _Metallic: 0
     - _OcclusionStrength: 1
@@ -124,12 +124,12 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _TessellationGrassDistance: 0.1
+    - _TessellationGrassDistance: 0.09
     - _WindFrequency: 0.01
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.0686106, g: 0.18867922, b: 0, a: 1}
+    - _BaseColor: {r: 0, g: 0.254717, b: 0.004091452, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
