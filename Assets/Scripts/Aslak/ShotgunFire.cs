@@ -35,7 +35,8 @@ public class ShotgunFire : MonoBehaviour
         _isHeld = heldByHand.GameObject != null;
     }
 
-    private void OnTrackpadButtonChanged(bool trackpadButtonState)
+    //Anders note: Change back to OnTriggerButtonChanged if something breaks
+    private void OnTriggerButtonChanged(bool trackpadButtonState)
     {
         if (!trackpadButtonState || !_isHeld && !canFire)
         {

@@ -55,6 +55,16 @@ namespace Valve.VR
         
         private static SteamVR_Action_Pose p_mixedreality_ExternalCamera;
         
+        private static SteamVR_Action_Boolean p_lawnmowerHero_TriggerButton;
+        
+        private static SteamVR_Action_Boolean p_lawnmowerHero_GripButton;
+        
+        private static SteamVR_Action_Boolean p_lawnmowerHero_YButton;
+        
+        private static SteamVR_Action_Boolean p_lawnmowerHero_XButton;
+        
+        private static SteamVR_Action_Vibration p_lawnmowerHero_Haptic;
+        
         public static SteamVR_Action_Boolean default_InteractUI
         {
             get
@@ -207,6 +217,46 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Boolean lawnmowerHero_TriggerButton
+        {
+            get
+            {
+                return SteamVR_Actions.p_lawnmowerHero_TriggerButton.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean lawnmowerHero_GripButton
+        {
+            get
+            {
+                return SteamVR_Actions.p_lawnmowerHero_GripButton.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean lawnmowerHero_YButton
+        {
+            get
+            {
+                return SteamVR_Actions.p_lawnmowerHero_YButton.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean lawnmowerHero_XButton
+        {
+            get
+            {
+                return SteamVR_Actions.p_lawnmowerHero_XButton.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Vibration lawnmowerHero_Haptic
+        {
+            get
+            {
+                return SteamVR_Actions.p_lawnmowerHero_Haptic.GetCopy<SteamVR_Action_Vibration>();
+            }
+        }
+        
         private static void InitializeActionArrays()
         {
             Valve.VR.SteamVR_Input.actions = new Valve.VR.SteamVR_Action[] {
@@ -228,7 +278,12 @@ namespace Valve.VR
                     SteamVR_Actions.buggy_Throttle,
                     SteamVR_Actions.buggy_Brake,
                     SteamVR_Actions.buggy_Reset,
-                    SteamVR_Actions.mixedreality_ExternalCamera};
+                    SteamVR_Actions.mixedreality_ExternalCamera,
+                    SteamVR_Actions.lawnmowerHero_TriggerButton,
+                    SteamVR_Actions.lawnmowerHero_GripButton,
+                    SteamVR_Actions.lawnmowerHero_YButton,
+                    SteamVR_Actions.lawnmowerHero_XButton,
+                    SteamVR_Actions.lawnmowerHero_Haptic};
             Valve.VR.SteamVR_Input.actionsIn = new Valve.VR.ISteamVR_Action_In[] {
                     SteamVR_Actions.default_InteractUI,
                     SteamVR_Actions.default_Teleport,
@@ -247,11 +302,17 @@ namespace Valve.VR
                     SteamVR_Actions.buggy_Throttle,
                     SteamVR_Actions.buggy_Brake,
                     SteamVR_Actions.buggy_Reset,
-                    SteamVR_Actions.mixedreality_ExternalCamera};
+                    SteamVR_Actions.mixedreality_ExternalCamera,
+                    SteamVR_Actions.lawnmowerHero_TriggerButton,
+                    SteamVR_Actions.lawnmowerHero_GripButton,
+                    SteamVR_Actions.lawnmowerHero_YButton,
+                    SteamVR_Actions.lawnmowerHero_XButton};
             Valve.VR.SteamVR_Input.actionsOut = new Valve.VR.ISteamVR_Action_Out[] {
-                    SteamVR_Actions.default_Haptic};
+                    SteamVR_Actions.default_Haptic,
+                    SteamVR_Actions.lawnmowerHero_Haptic};
             Valve.VR.SteamVR_Input.actionsVibration = new Valve.VR.SteamVR_Action_Vibration[] {
-                    SteamVR_Actions.default_Haptic};
+                    SteamVR_Actions.default_Haptic,
+                    SteamVR_Actions.lawnmowerHero_Haptic};
             Valve.VR.SteamVR_Input.actionsPose = new Valve.VR.SteamVR_Action_Pose[] {
                     SteamVR_Actions.default_Pose,
                     SteamVR_Actions.mixedreality_ExternalCamera};
@@ -265,7 +326,11 @@ namespace Valve.VR
                     SteamVR_Actions.default_SnapTurnRight,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Brake,
-                    SteamVR_Actions.buggy_Reset};
+                    SteamVR_Actions.buggy_Reset,
+                    SteamVR_Actions.lawnmowerHero_TriggerButton,
+                    SteamVR_Actions.lawnmowerHero_GripButton,
+                    SteamVR_Actions.lawnmowerHero_YButton,
+                    SteamVR_Actions.lawnmowerHero_XButton};
             Valve.VR.SteamVR_Input.actionsSingle = new Valve.VR.SteamVR_Action_Single[] {
                     SteamVR_Actions.default_Squeeze,
                     SteamVR_Actions.buggy_Throttle};
@@ -290,7 +355,11 @@ namespace Valve.VR
                     SteamVR_Actions.buggy_Steering,
                     SteamVR_Actions.buggy_Throttle,
                     SteamVR_Actions.buggy_Brake,
-                    SteamVR_Actions.buggy_Reset};
+                    SteamVR_Actions.buggy_Reset,
+                    SteamVR_Actions.lawnmowerHero_TriggerButton,
+                    SteamVR_Actions.lawnmowerHero_GripButton,
+                    SteamVR_Actions.lawnmowerHero_YButton,
+                    SteamVR_Actions.lawnmowerHero_XButton};
         }
         
         private static void PreInitActions()
@@ -314,6 +383,11 @@ namespace Valve.VR
             SteamVR_Actions.p_buggy_Brake = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/buggy/in/Brake")));
             SteamVR_Actions.p_buggy_Reset = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/buggy/in/Reset")));
             SteamVR_Actions.p_mixedreality_ExternalCamera = ((SteamVR_Action_Pose)(SteamVR_Action.Create<SteamVR_Action_Pose>("/actions/mixedreality/in/ExternalCamera")));
+            SteamVR_Actions.p_lawnmowerHero_TriggerButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/LawnmowerHero/in/TriggerButton")));
+            SteamVR_Actions.p_lawnmowerHero_GripButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/LawnmowerHero/in/GripButton")));
+            SteamVR_Actions.p_lawnmowerHero_YButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/LawnmowerHero/in/YButton")));
+            SteamVR_Actions.p_lawnmowerHero_XButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/LawnmowerHero/in/XButton")));
+            SteamVR_Actions.p_lawnmowerHero_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Action.Create<SteamVR_Action_Vibration>("/actions/LawnmowerHero/out/Haptic")));
         }
     }
 }

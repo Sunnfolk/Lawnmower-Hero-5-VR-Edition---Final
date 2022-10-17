@@ -55,7 +55,8 @@ public class SpratActive : MonoBehaviour
         Music.Pause(sfxSpray);
     }
 
-    private void OnTrackpadButtonChanged(bool trackpadButtonState)
+    //Anders note: Change back to OnTriggerButtonChanged if something breaks
+    private void OnTriggerButtonChanged(bool trackpadButtonState)
     {
         //_trackpadButtonDown = trackpadButtonState;
 
