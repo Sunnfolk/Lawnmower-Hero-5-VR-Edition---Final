@@ -199,10 +199,10 @@ Material:
     - _ZWrite: 1
     - __NumberOfStacks: 1
     m_Colors:
-    - _BaseColor: {r: 0.05446779, g: 0.6792453, b: 0.10644957, a: 1}
+    - _BaseColor: {r: 0.063047335, g: 0.4339623, b: 0.09337376, a: 1}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.054467767, g: 0.6792453, b: 0.10644952, a: 1}
+    - _Color: {r: 0.06304731, g: 0.43396226, b: 0.09337372, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GroundColor: {r: 0, g: 0.6132076, b: 0.0943397, a: 1}

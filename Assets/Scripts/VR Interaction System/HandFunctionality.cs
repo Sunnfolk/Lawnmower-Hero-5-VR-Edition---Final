@@ -38,7 +38,8 @@ public class HandFunctionality : MonoBehaviour
         BehaviourPose = GetComponent<SteamVR_Behaviour_Pose>();
     }
 
-    private void OnTriggerButtonChanged(bool isTriggerDown) //Message from HandController
+    //Anders edit: Change back to OnTriggerButtonChanged if this stops working
+    private void OnGripButtonChanged(bool isTriggerDown) //Message from HandController
     {
         if (isTriggerDown)
         {

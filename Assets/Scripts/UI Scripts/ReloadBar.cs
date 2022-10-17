@@ -25,8 +25,8 @@ public class ReloadBar : MonoBehaviour
     
     
     
-    
-    private void OnTrackpadButtonChanged(bool trackpadButtonState)
+    //Anders note: Change back to OnTriggerButtonChanged if something breaks
+    private void OnTriggerButtonChanged(bool trackpadButtonState)
     {
         if (!trackpadButtonState || !Shotgun._isHeld && !CanShoot)
         {

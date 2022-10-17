@@ -3,21 +3,30 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Obstacle
+  - WaspNest
+  - EnemyProximity
+  - LawnMower
+  - LeftHand
+  - RightHand
+  - Pellet
+  - EvilGnome
+  - Wasp
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - IgnorePlayer
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Particles
+  - Ground
+  - Player
+  - SandPit
+  - Pond
+  - IgnorePlayerAndIgnorePlayer
+  - Weapon
   - 
   - 
   - 

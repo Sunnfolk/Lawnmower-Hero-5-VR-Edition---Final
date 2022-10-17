@@ -81,6 +81,26 @@
       "name": "/actions/mixedreality/in/ExternalCamera",
       "type": "pose",
       "requirement": "optional"
+    },
+    {
+      "name": "/actions/LawnmowerHero/in/TriggerButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/LawnmowerHero/in/GripButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/LawnmowerHero/in/YButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/LawnmowerHero/in/XButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/LawnmowerHero/out/Haptic",
+      "type": "vibration"
     }
   ],
   "action_sets": [
@@ -98,6 +118,10 @@
     },
     {
       "name": "/actions/mixedreality",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/LawnmowerHero",
       "usage": "single"
     }
   ],
