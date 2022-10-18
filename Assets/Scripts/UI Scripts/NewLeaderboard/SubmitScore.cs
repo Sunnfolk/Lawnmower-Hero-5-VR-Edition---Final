@@ -13,6 +13,8 @@ public class SubmitScore : MonoBehaviour
     private ScoreManager _scoreManager;
     private string _name;
 
+    //HEY LISTEN UP. MAYBE GET SCORE FROM THE CALCULATECUTGRASS ON AWAKE OR SOMETHING. 
+    
     private void Start()
     {
         _scoreManager = this.GetComponent<ScoreManager>();
