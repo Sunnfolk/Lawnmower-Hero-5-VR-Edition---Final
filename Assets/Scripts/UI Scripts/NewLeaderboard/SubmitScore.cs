@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SubmitScore : MonoBehaviour
 {
@@ -48,13 +49,25 @@ public class SubmitScore : MonoBehaviour
 
     public void ScoreSubmitFunction()
     {
+        print("ScoreSubmitFunction");
         _name = inputField.GetComponent<TMP_InputField>().text;
-        score = 1;
         if (name != null && score != null)
         {
+            print("Scoremanager addscore incoming right now");
+            print("Name: " + _name + " Score: " + score);
             _scoreManager.AddScore(new Score(_name, score));
+            _scoreManager.SaveScore();
         }
         
         
+    }
+
+    private void Update()
+    {
+        if (Keyboard.current.pKey.wasPressedThisFrame)
+        {
+            print("SUBMIT SCORE NOW");
+            ScoreSubmitFunction();
+        }
     }
 }
