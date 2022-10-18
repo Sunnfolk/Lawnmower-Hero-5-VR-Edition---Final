@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001901F0A1F18 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000246890204B8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,9 +18,66 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SoundI::release                          : Alien deep house (basic) (0000018ED69273F8)
-[LOG] SoundI::release                          :     Alien deep house (basic) (0000018F31F7CDD8)
-[LOG] SoundI::release                          :     Alien deep house (basic) (0000018F39ECFB98)
+[LOG] SystemI::createSound                     : filename = Assets/Plugins/FMOD/Resources/lawnmowerhero/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000246AD330238 : node = 00000246A41A6340
+[LOG] SystemI::createSound                     : add node to async list : head = 00000246BE31E428.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000246AD330238
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Plugins/FMOD/Resources/lawnmowerhero/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1731840
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13728
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000246A41A6450
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Alien deep house (basic)', format=5, channels=2, frequency=48000, lengthbytes=410496, lengthpcm=1440000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000246AD330238
+[LOG] SoundI::release                          : Alien deep house (basic) (00000245802F4758)
+[LOG] SoundI::release                          :     Alien deep house (basic) (000002434AE35078)
+[LOG] SoundI::release                          :     Alien deep house (basic) (00000246AB806C58)
+[LOG] SystemI::createSound                     : filename = Assets/Plugins/FMOD/Resources/lawnmowerhero/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000246C0AAC228 : node = 00000246C24D9970
+[LOG] SystemI::createSound                     : add node to async list : head = 00000246BE31E428.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000246C0AAC228
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Plugins/FMOD/Resources/lawnmowerhero/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1731840
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13728
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000246C24D9A80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Alien deep house (basic)', format=5, channels=2, frequency=48000, lengthbytes=410496, lengthpcm=1440000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000246C0AAC228
+[LOG] SoundI::release                          : Alien deep house (basic) (00000246AD330238)
+[LOG] SoundI::release                          :     Alien deep house (basic) (000002457AD40568)
+[LOG] SoundI::release                          :     Alien deep house (basic) (000002468AE07268)
+[LOG] SystemI::createSound                     : filename = Assets/Plugins/FMOD/Resources/lawnmowerhero/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000246337CEC78 : node = 00000245A23236F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000246BE31E428.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000246337CEC78
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Plugins/FMOD/Resources/lawnmowerhero/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1731840
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13728
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000245A2323800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Alien deep house (basic)', format=5, channels=2, frequency=48000, lengthbytes=410496, lengthpcm=1440000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000246337CEC78
+[LOG] SoundI::release                          : Alien deep house (basic) (00000246C0AAC228)
+[LOG] SoundI::release                          :     Alien deep house (basic) (0000024634023048)
+[LOG] SoundI::release                          :     Alien deep house (basic) (0000024341E10DA8)
+[LOG] SoundI::release                          : Alien deep house (basic) (00000246337CEC78)
+[LOG] SoundI::release                          :     Alien deep house (basic) (000002467F3E4A58)
+[LOG] SoundI::release                          :     Alien deep house (basic) (00000246CC669788)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

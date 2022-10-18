@@ -62,7 +62,7 @@ public class BatBehaviour : MonoBehaviour
     {
         if (other.collider.CompareTag("EvilGnome") || 
             (other.collider.CompareTag("Gnome Lair")) ||
-            (other.collider.CompareTag("GoodGnome")))
+            (other.collider.CompareTag("Wasp")))
         {
             if (speed >= 21f)
             {

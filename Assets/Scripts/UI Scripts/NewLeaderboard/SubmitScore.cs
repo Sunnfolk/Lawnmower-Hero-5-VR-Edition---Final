@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class SubmitScore : MonoBehaviour
 {
@@ -57,8 +58,9 @@ public class SubmitScore : MonoBehaviour
             print("Name: " + _name + " Score: " + score);
             _scoreManager.AddScore(new Score(_name, score));
             _scoreManager.SaveScore();
+            print("Score saved");
+            SceneManager.LoadScene(0);
         }
-        
         
     }
 

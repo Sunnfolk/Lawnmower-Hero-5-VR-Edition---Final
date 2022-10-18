@@ -37,6 +37,7 @@ public class enemySpawner : MonoBehaviour
         canSpawn = false;
         var count = Random.Range(minSpawnCount, maxSpawnCount);
         var tag = "";
+        //editing to only work with wasps
         if (poolUsed == 0) tag = "gnome";
         else tag = "wasp";
 
