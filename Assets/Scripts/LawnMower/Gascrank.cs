@@ -112,7 +112,7 @@ public class Gascrank : MonoBehaviour
         
         if (targetAngle <= deadZone && targetAngle>= -deadZone)
         {
-            print("In dead zone, don't change crank pos");
+            //print("In dead zone, don't change crank pos");
             outputAngle = 0f;
         }
         else

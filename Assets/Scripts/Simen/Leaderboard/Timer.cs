@@ -47,9 +47,9 @@ public class Timer : MonoBehaviour
                 timeRemaining = 0;
                 canSubmitScore = true;
                 _pauseMenu.ScorePause();
-                pointer.SetActive(true);
-                
                 timerIsRunning = false;
+                pointer.SetActive(true);
+
             }
         }
     }

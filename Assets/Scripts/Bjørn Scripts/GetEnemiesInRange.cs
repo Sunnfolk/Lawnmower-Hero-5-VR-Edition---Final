@@ -9,7 +9,7 @@ public class GetEnemiesInRange : MonoBehaviour
     private void Update()
     {
         var count = 0;
-        print(colliders.Count);
+        //print(colliders.Count);
         
         foreach (var i in colliders)
         {

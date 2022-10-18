@@ -8,6 +8,7 @@ public class pauseEffect : MonoBehaviour
     public static bool GameIsPaused;
 
     public GameObject PauseMenuUI;
+    public GameObject ScoreUI;
     private Timer _timer;
 
     private void Start()
@@ -40,5 +41,6 @@ public class pauseEffect : MonoBehaviour
     {
         Time.timeScale = 0f;
         GameIsPaused = true;
+        ScoreUI.SetActive(true);
     }
 }

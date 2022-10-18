@@ -214,7 +214,7 @@ public class SphereMovement : MonoBehaviour
                 result += 1.5f;
             }
             _slowedWheels = result;
-            print(_slowedWheels);
+            //print(_slowedWheels);
         }
         
         _slowDown = 1 - (((EnemiesInRange * slowDownEnemy)/100) + ((_slowedWheels * slowDownTerrain)/100));

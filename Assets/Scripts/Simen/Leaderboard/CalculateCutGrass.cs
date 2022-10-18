@@ -8,12 +8,13 @@ public class CalculateCutGrass : MonoBehaviour
         
         private float startPixels;
         private float endPixels;
-        
+
+        private int renderTextureWidth;
+        private int renderTextureHeight;
         
         [Space(5)]
         [Header("Setting Score")]
         public float grassScore;
-        public transformVariable trans;
         private Timer _timer;
         private bool _canScore;
         private scoreManager _scoreManager;
@@ -24,11 +25,15 @@ public class CalculateCutGrass : MonoBehaviour
             _timer = GetComponent<Timer>();
             _scoreManager = GetComponent<scoreManager>();
             _canScore = true;
+            
+            renderTextureWidth = renderTexture.width;
+            renderTextureHeight = renderTexture.height;
         }
 
         Texture2D ToTexture2D(RenderTexture rTex)
         {
-            Texture2D tex = new Texture2D(512, 512, TextureFormat.RGB24, false);
+            //Make sure this never runs in update, or your performance will tank
+            Texture2D tex = new Texture2D(renderTextureWidth, renderTextureHeight, TextureFormat.RGB24, false);
             // ReadPixels looks at the active RenderTexture.
             RenderTexture.active = rTex;
             tex.ReadPixels(new Rect(0, 0, rTex.width, rTex.height), 0, 0);
@@ -50,8 +55,13 @@ public class CalculateCutGrass : MonoBehaviour
 
         float CalculatePixels()
         {
+            //print("CALCULATING SHIT NOW");
             //return (startPixels / endPixels * 100f) -100f;
-            return 100f - (endPixels / startPixels * 100f);
+            //print("Start Pixels: " + startPixels);
+            print("End Pixels: " + endPixels);
+            print("Return value:" + ((100f - (endPixels / startPixels * 100f))*10));
+            //return 100f - (endPixels / startPixels * 100f); old one that gave lower number instead of higher number for better cut job
+            return (100f - (endPixels / startPixels * 100f))*10;
         }
    
         private void Update()
@@ -61,7 +71,7 @@ public class CalculateCutGrass : MonoBehaviour
             newTexture2D = ToTexture2D(renderTexture);
             endPixels = readPixels(newTexture2D, Color.black);
             */
-            
+
             if (startPixels == 0)
             {
                 newTexture2D = ToTexture2D(renderTexture);
@@ -70,12 +80,12 @@ public class CalculateCutGrass : MonoBehaviour
 
             if (!_timer.timerIsRunning && _canScore)
             { 
+                print("If this triggers then I hope you're having a wonderful day.");
+                //newTexture2D = ToTexture2D(renderTexture);
+                
                 newTexture2D = ToTexture2D(renderTexture);
-               
                 endPixels = readPixels(newTexture2D, Color.black);
                 grassScore = CalculatePixels();
-           
-                trans.score2 += grassScore * _scoreManager.grassPoints;
                 _canScore = false;
             }
         }

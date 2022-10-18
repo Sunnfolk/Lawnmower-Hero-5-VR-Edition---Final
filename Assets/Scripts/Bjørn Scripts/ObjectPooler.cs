@@ -72,6 +72,6 @@ public class ObjectPooler : MonoBehaviour
 
     private void Update()
     {
-        print(pools[0].activeObjects + " : " + pools[1].activeObjects);
+        //print(pools[0].activeObjects + " : " + pools[1].activeObjects);
     }
 }
