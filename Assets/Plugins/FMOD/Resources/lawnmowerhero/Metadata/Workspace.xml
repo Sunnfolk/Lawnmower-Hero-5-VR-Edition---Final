@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Workspace" id="{64cc6d26-a417-487e-af45-b7a1c0d28e3e}">
 		<property name="builtBanksOutputDirectory">
-			<value>../../../GitHub/LawnMower-Hero-5/Assets/FMOD Banks</value>
+			<value>../../../../FMODBanks</value>
 		</property>
 		<relationship name="masterEventFolder">
 			<destination>{f04b288d-255d-43e7-b1fd-c63f68a41ef1}</destination>
