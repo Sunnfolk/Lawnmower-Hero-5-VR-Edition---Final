@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{1f04f6fb-73ef-4986-b646-eb9f1af29231}">
+		<property name="assetPath">
+			<value>Friends Zone/11.Reklame.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>11.859591836734694</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bb2822c3-20b2-43c3-8cef-6858d5cfa859}</destination>
+		</relationship>
+	</object>
+</objects>

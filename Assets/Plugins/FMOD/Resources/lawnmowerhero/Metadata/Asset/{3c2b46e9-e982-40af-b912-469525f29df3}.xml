@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EncodableAsset" id="{3c2b46e9-e982-40af-b912-469525f29df3}">
+		<property name="assetPath">
+			<value>Channel 81/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bb2822c3-20b2-43c3-8cef-6858d5cfa859}</destination>
+		</relationship>
+	</object>
+</objects>

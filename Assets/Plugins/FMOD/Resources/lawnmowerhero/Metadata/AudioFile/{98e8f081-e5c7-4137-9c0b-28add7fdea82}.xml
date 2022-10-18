@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{98e8f081-e5c7-4137-9c0b-28add7fdea82}">
+		<property name="assetPath">
+			<value>Channel 81/7. Reklame.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>44.95673469387755</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bb2822c3-20b2-43c3-8cef-6858d5cfa859}</destination>
+		</relationship>
+	</object>
+</objects>

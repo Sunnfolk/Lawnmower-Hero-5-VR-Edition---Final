@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{b32e653d-6cb9-48b9-956c-3fb6a4638dec}">
+		<property name="assetPath">
+			<value>SFX/wind_1.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>47.248843537414963</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bb2822c3-20b2-43c3-8cef-6858d5cfa859}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{bd83a639-9fb5-4d56-b0d0-92d64bd2ad08}">
+		<property name="assetPath">
+			<value>SFX/gnome_growl_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.4525850340136053</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bb2822c3-20b2-43c3-8cef-6858d5cfa859}</destination>
+		</relationship>
+	</object>
+</objects>
