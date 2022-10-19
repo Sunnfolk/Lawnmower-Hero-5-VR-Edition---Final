@@ -66,19 +66,19 @@ public class BatBehaviour : MonoBehaviour
         {
             if (speed >= 21f)
             {
-                GetEnemyDoDamage(other, 5f);
+                GetEnemyDoDamage(other, 50f);
                 print(speed + ": Fast af Boyyyy");
             }
 
             else if (speed >= 16f)
             {
-                GetEnemyDoDamage(other, 4f);
+                GetEnemyDoDamage(other, 40f);
                 print("Do you have anny idea how fast im going");
             }
 
             else if (speed >= 6f)
             {
-                GetEnemyDoDamage(other, 2f);
+                GetEnemyDoDamage(other, 5f);
                 print("I'm Fast");
             }
         }
@@ -89,11 +89,11 @@ public class BatBehaviour : MonoBehaviour
         }
     }
 
-    private void GetEnemyDoDamage(Collision gnome, float damage)
+    private void GetEnemyDoDamage(Collision wasp, float damage)
     {
-        if (gnome.collider.GetComponent<EnemyHealth>() != null)
+        if (wasp.collider.GetComponent<EnemyHealth>() != null)
         {
-            gnome.collider.GetComponent<EnemyHealth>().health -= batDamage * damage;
+            wasp.collider.GetComponent<EnemyHealth>().health -= batDamage * damage;
         }
     }
 }
