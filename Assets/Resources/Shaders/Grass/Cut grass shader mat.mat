@@ -27,7 +27,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -39,7 +39,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BladeTexture:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0.99, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
@@ -104,14 +104,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _BendDelta: 0
+    - _BendDelta: 0.042
     - _BladeBendCurve: 1
     - _BladeBendDistance: 0.04
-    - _BladeHeightMax: 0
-    - _BladeHeightMin: 0.22
+    - _BladeHeightMax: 0.162
+    - _BladeHeightMin: 0.2
     - _BladeSegments: 1
-    - _BladeWidthMax: 0.0517
-    - _BladeWidthMin: 0.0324
+    - _BladeWidthMax: 0.0398
+    - _BladeWidthMin: 0.0363
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -126,7 +126,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _GrassFalloff: 0
-    - _GrassThreshold: 0.39
+    - _GrassThreshold: 1
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -137,7 +137,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _TessellationGrassDistance: 0.01
+    - _TessellationGrassDistance: 0.084
     - _WindFrequency: 0.01
     - _WorkflowMode: 1
     - _ZWrite: 1
