@@ -132,6 +132,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-7339646169537442777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Controller/Whitenoise
+  m_EditorClassIdentifier: 
+  Name: Whitenoise
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-7207951382904128712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,8 +328,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -3299694817255882743}
-  - {fileID: -2777136812314799529}
+  - {fileID: -7339646169537442777}
+  - {fileID: 1021731528897030608}
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
@@ -436,7 +458,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Resources/lawnmowerhero/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638017257794522430
+  lastModified: 638022236462552660
   FileSizes:
   - Name: Desktop
     Value: 850
@@ -816,7 +838,7 @@ MonoBehaviour:
   - {fileID: 2788256647379343496}
   StringsBanks:
   - {fileID: -4681319429603083130}
-  stringsBankWriteTime: 638017257794522430
+  stringsBankWriteTime: 638022236462552660
   cacheVersion: 8
 --- !u!114 &4054717762178458
 MonoBehaviour:
@@ -951,6 +973,28 @@ MonoBehaviour:
   IsGlobal: 1
   Exists: 1
 --- !u!114 &908428822571852014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Controller/Genre
+  m_EditorClassIdentifier: 
+  Name: Genre
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 1
+  Exists: 1
+--- !u!114 &1021731528897030608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1141,7 +1185,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Resources/lawnmowerhero/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638017257794502494
+  lastModified: 638022236462547699
   FileSizes:
   - Name: Desktop
     Value: 1745568
