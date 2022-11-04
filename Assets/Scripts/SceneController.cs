@@ -21,7 +21,15 @@ public class SceneController : MonoBehaviour
         doLoadNow = true;
         action = "load";
     }
-    
+
+    private void Awake()
+    {
+        if (pauseEffect.GameIsPaused)
+        {
+            pauseEffect.GameIsPaused = false;
+        }
+    }
+
     public void ResetScene()
     {
         swappedScene?.Invoke();
@@ -51,4 +59,11 @@ public class SceneController : MonoBehaviour
             else SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
+
+    public void LoadLevel(int level)
+    {
+        SceneManager.LoadScene(level);
+    }
+    
+    
 }

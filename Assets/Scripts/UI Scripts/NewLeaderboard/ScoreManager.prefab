@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5512522769600723027}
   - component: {fileID: 5512522769600723028}
+  - component: {fileID: 187781963}
+  - component: {fileID: 187781965}
+  - component: {fileID: 187781967}
   m_Layer: 0
   m_Name: ScoreManager
   m_TagString: Untagged
@@ -49,3 +52,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad835ccdcbc70d4881433fd747a8150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &187781963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5512522769600723026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b38ed09f5932f498ea778a480d914e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textEntry: {fileID: 0}
+  timeRemaining: 40
+  timerIsRunning: 0
+  canSubmitScore: 0
+  timer: {fileID: 0}
+  pointer: {fileID: 0}
+--- !u!114 &187781965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5512522769600723026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca391df9b39a8541977266b30fd3da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderTexture: {fileID: 8400000, guid: eb034c54e33a4d14abe10974a645a387, type: 2}
+  grassScore: 0
+--- !u!114 &187781967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5512522769600723026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db777c1db8505654f942391d81de1e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPausedInspector: 0
+  PauseMenuUI: {fileID: 0}
+  ScoreUI: {fileID: 0}
+  _timer: {fileID: 0}

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 using Valve.VR;
 using UnityEngine.SocialPlatforms.Impl;
 
@@ -31,6 +32,11 @@ public class Timer : MonoBehaviour
         {
             pointer.SetActive(false);
         }
+    }
+
+    private void Awake()
+    {
+        timeRemaining = 10;
     }
 
     private void Update()
@@ -93,7 +99,9 @@ public class Timer : MonoBehaviour
     private void OnKeyboardClosed(VREvent_t args)
     {
         // Might use this to unselect input field. Not sure yet
-        //EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(null);
+
+        textEntry.text = text;
     }
     
     // This code is being called from a UnityEvent (button/text field select)

@@ -14,19 +14,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Intermediate/Intermediate_Medium_Day.unity
     guid: 8f0a37428a0ff4ee986db888706dd819
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Intermediate/Intermediate_Medium_Night.unity
     guid: a8dc4a04899374c8c8b3e945a570f939
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Advanced/Advanced_Medium_Day.unity
     guid: c148a5523450b4946ab8d476cb8e8e9c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Easy/Easy_Medium_Night.unity
     guid: 2ef6caba635834d4ebbfc94abc872f82
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Advanced/Advanced_Large_Night.unity
     guid: d0aaf7034dcfa4d848bc048aaeafa846
   m_configObjects:

@@ -39,7 +39,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BladeTexture:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0.99, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
@@ -62,7 +62,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GrassMap:
-        m_Texture: {fileID: 8400000, guid: 8cbca5a267b94c44a82ff6a49f351b7e, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -104,14 +104,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _BendDelta: 0.443
-    - _BladeBendCurve: 1.2
+    - _BendDelta: 0.042
+    - _BladeBendCurve: 1
     - _BladeBendDistance: 0.04
     - _BladeHeightMax: 0.162
     - _BladeHeightMin: 0.2
     - _BladeSegments: 1
     - _BladeWidthMax: 0.0398
-    - _BladeWidthMin: 0.028
+    - _BladeWidthMin: 0.0363
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -138,14 +138,14 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _TessellationGrassDistance: 0.01
-    - _WindFrequency: 0.168
+    - _WindFrequency: 0.081
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.13725491, g: 0.41960788, b: 0.1764706, a: 1}
+    - _BaseColor: {r: 0.10196079, g: 0.03137255, b: 0.023529414, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _TipColor: {r: 0.5717306, g: 0.6509434, b: 0.13203098, a: 1}
+    - _TipColor: {r: 0.3207547, g: 0.21258251, b: 0.08624065, a: 1}
     - _WindVelocity: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
