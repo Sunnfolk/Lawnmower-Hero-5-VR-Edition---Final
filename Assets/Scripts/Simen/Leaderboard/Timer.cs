@@ -36,7 +36,7 @@ public class Timer : MonoBehaviour
 
     private void Awake()
     {
-        timeRemaining = 10;
+        timeRemaining = 60;
     }
 
     private void Update()
