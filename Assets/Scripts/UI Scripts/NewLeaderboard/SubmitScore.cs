@@ -48,6 +48,18 @@ public class SubmitScore : MonoBehaviour
         
     }
 
+    private IEnumerator LoadMainMenu()
+    {
+        float ttl = 0;
+        while (1 > ttl)
+        {
+            ttl += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        SceneManager.LoadScene(0);
+    }
+    
     public void ScoreSubmitFunction()
     {
         print("ScoreSubmitFunction");
@@ -59,7 +71,7 @@ public class SubmitScore : MonoBehaviour
             _scoreManager.AddScore(new Score(_name, score));
             _scoreManager.SaveScore();
             print("Score saved");
-            SceneManager.LoadScene(0);
+            StartCoroutine(LoadMainMenu());
         }
         
     }
@@ -75,7 +87,7 @@ public class SubmitScore : MonoBehaviour
             _scoreManager.AddScoreTwo(new Score(_name, score));
             _scoreManager.SaveScoreLevelTwo();
             print("Score saved");
-            SceneManager.LoadScene(0);
+            StartCoroutine(LoadMainMenu());
         }
         
     }
