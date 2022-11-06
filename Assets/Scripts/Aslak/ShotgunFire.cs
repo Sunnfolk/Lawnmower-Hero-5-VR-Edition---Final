@@ -90,7 +90,7 @@ public class ShotgunFire : MonoBehaviour
             CanFire = false;
         }*/
         canFire = false;
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(3);
         canFire = true;
     }
         
