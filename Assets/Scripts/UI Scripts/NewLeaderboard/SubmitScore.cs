@@ -63,6 +63,22 @@ public class SubmitScore : MonoBehaviour
         }
         
     }
+    
+    public void ScoreSubmitFunctionTwo()
+    {
+        print("ScoreSubmitFunction");
+        _name = inputField.GetComponent<TMP_InputField>().text;
+        if (name != null && score != null)
+        {
+            print("Scoremanager addscore incoming right now");
+            print("Name: " + _name + " Score: " + score);
+            _scoreManager.AddScoreTwo(new Score(_name, score));
+            _scoreManager.SaveScoreLevelTwo();
+            print("Score saved");
+            SceneManager.LoadScene(0);
+        }
+        
+    }
 
     private void Update()
     {

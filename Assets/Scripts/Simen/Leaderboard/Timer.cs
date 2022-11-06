@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
     string text = "";
     [Space(5)]
 
-    public float timeRemaining = 10;
+    public float timeRemaining = 30;
     public bool timerIsRunning;
     public bool canSubmitScore;
     public TMP_Text timer;

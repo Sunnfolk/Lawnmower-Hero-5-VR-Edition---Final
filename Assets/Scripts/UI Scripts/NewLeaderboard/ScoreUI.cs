@@ -13,13 +13,31 @@ public class ScoreUI : MonoBehaviour
 
     private void Start()
     {
-        var scores = scoreManager.GetHighScores().ToArray();
-        for (int i = 0; i < scores.Length; i++)
+        if (!transform.parent.CompareTag("LevelTwoScore"))
         {
-            var row = Instantiate(rowUI, transform).GetComponent<RowUI>();
-            row.rank.text = (i + 1).ToString();
-            row.name.text = scores[i].name;
-            row.score.text = scores[i].score.ToString();
+            var scores = scoreManager.GetHighScores().ToArray();
+            print("scores " + scores.Length);
+            for (int i = 0; i < scores.Length; i++)
+            {
+                var row = Instantiate(rowUI, transform).GetComponent<RowUI>();
+                row.rank.text = (i + 1).ToString();
+                row.name.text = scores[i].name;
+                row.score.text = scores[i].score.ToString();
+            }
+        }
+        else
+        {
+            print("GOOOOOSDKALSKDJLAKSJDLAKJS");
+            var scoresTwo = scoreManager.GetHighScoresTwo().ToArray();
+            print("scorestwooooo " + scoresTwo.Length);
+            for (int i = 0; i < scoresTwo.Length; i++)
+            {
+                print("Adding score");
+                var row = Instantiate(rowUI, transform).GetComponent<RowUI>();
+                row.rank.text = (i + 1).ToString();
+                row.name.text = scoresTwo[i].name;
+                row.score.text = scoresTwo[i].score.ToString();
+            }
         }
     }
 }

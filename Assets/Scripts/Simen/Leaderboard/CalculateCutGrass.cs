@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CalculateCutGrass : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class CalculateCutGrass : MonoBehaviour
 
         private void Awake()
         {
+            if (SceneManager.GetActiveScene().buildIndex == 0)
+            {
+                return;
+            }
             newTexture2D = ToTexture2D(renderTexture);
             _timer = GetComponent<Timer>();
             _scoreManager = GetComponent<scoreManager>();
@@ -33,7 +38,7 @@ public class CalculateCutGrass : MonoBehaviour
         Texture2D ToTexture2D(RenderTexture rTex)
         {
             //Make sure this never runs in update, or your performance will tank
-            print("If this message is being spammed, you are doing something wrong");
+            print("If this message is being spammed, then I am the reason for unplayable performance");
             Texture2D tex = new Texture2D(renderTextureWidth, renderTextureHeight, TextureFormat.RGB24, false);
             // ReadPixels looks at the active RenderTexture.
             RenderTexture.active = rTex;
@@ -72,7 +77,10 @@ public class CalculateCutGrass : MonoBehaviour
             newTexture2D = ToTexture2D(renderTexture);
             endPixels = readPixels(newTexture2D, Color.black);
             */
-
+            if (SceneManager.GetActiveScene().buildIndex == 0)
+            {
+                return;
+            }
             if (startPixels == 0)
             {
                 print("Startpixels = 0, That This should only run once i think");

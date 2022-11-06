@@ -11,8 +11,11 @@ public class ScoreData
 
     public List<Score> scores;
 
+    public List<Score> scoreTwo;
+
     public ScoreData()
     {
         scores = new List<Score>();
+        scoreTwo = new List<Score>();
     }
 }

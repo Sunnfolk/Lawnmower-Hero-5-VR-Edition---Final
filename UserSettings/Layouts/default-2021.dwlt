@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Scene
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 322
+  controlID: 125
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 120
+  controlID: 126
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 121
+  controlID: 127
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -217,8 +217,8 @@ MonoBehaviour:
     y: 0
     width: 449
     height: 846
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -298,10 +298,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1683
-    y: 81
-    width: 868
-    height: 1270
+    x: 1686
+    y: 73
+    width: 873
+    height: 1286
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 868, y: 488}
+  m_TargetSize: {x: 873, y: 491}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -327,10 +327,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -434
-    m_HBaseRangeMax: 434
-    m_VBaseRangeMin: -244
-    m_VBaseRangeMax: 244
+    m_HBaseRangeMin: -436.5
+    m_HBaseRangeMax: 436.5
+    m_VBaseRangeMin: -245.5
+    m_VBaseRangeMax: 245.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -348,23 +348,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 868
-      height: 1249
+      width: 873
+      height: 1265
     m_Scale: {x: 1.4979068, y: 1.497907}
-    m_Translation: {x: 433.99997, y: 624.5}
+    m_Translation: {x: 436.49994, y: 632.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -289.73764
-      y: -416.91507
-      width: 579.4753
-      height: 833.83014
+      x: -291.40662
+      y: -422.25583
+      width: 582.8133
+      height: 844.51166
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 868, y: 1270}
+  m_LastWindowPixelSize: {x: 873, y: 1286}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -404,7 +404,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4cf1fcff0ef2fcff56fffcff7200fdffa407fdff4498fdff58d5fdffa8effdffc2effdffc6effdff0ef1fdff1ef1fdffd4f2fdff2203feff0212feff0224feffae37feffac49feff724bfeffc655feffb45bfeff0466feff769bfeff2caffeffd809ffffdc09ffff100affff3a0affff5a0affffda0dffff980fffff1e9bffff64aeffff22afffff2eafffff78bcffff3abdffff7acaffff94cbffffeaedffff28fbfffff4ffffff140e0100be140100481501005a150100681501004a2a0100742d02009c2e0200302f020024320200d29002007c970200fa730300
+      m_ExpandedIDs: 1637ffff543cfffff83cfffffa45ffffb247ffff6e67ffffac6cffff506dffff027dffffb492ffffbe92ffff1093ffff1a93ffff5698ffffee98ffff1aa3ffff0cadffff70b8ffff62c2ffff4accffffd2e6ffff72e7ffffbeeaffff4cf8ffff8a4903008aec0300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -687,9 +687,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 201.13216, y: 2.729332, z: -155.00859}
+    m_Target: {x: -3.587403, y: 4.710279, z: -3.7177405}
     speed: 2
-    m_Value: {x: 201.13216, y: 2.729332, z: -155.00859}
+    m_Value: {x: -3.587403, y: 4.710279, z: -3.7177405}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -736,9 +736,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.004581022, y: -0.9929939, z: -0.002766979, w: 0.120958105}
+    m_Target: {x: 0.05899075, y: -0.81783915, z: -0.0766097, w: -0.5679078}
     speed: 2
-    m_Value: {x: 0.004575274, y: -0.99246585, z: -0.002772882, w: 0.12240485}
+    m_Value: {x: 0.058005374, y: -0.81850594, z: -0.075441904, w: -0.5665615}
   m_Size:
     m_Target: 0.56567574
     speed: 2
@@ -809,22 +809,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Shaders
+    - Assets/Scenes/New And Imrpoved
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/Shaders
+  - Assets/Scenes/New And Imrpoved
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Anders\Documents\GitHub\Lawnmower-Hero-5-VR-Edition---Final
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 152}
-    m_SelectedIDs: 2ef90c00
-    m_LastClickedID: 850222
-    m_ExpandedIDs: 00000000900301009203010094030100e6030100f6030100fa03010000ca9a3b
+    scrollPos: {x: 0, y: 319}
+    m_SelectedIDs: 9a080100
+    m_LastClickedID: 67738
+    m_ExpandedIDs: 0000000096080100980801009a0801009c080100ca080100e808010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -852,7 +852,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000900301009203010094030100
+    m_ExpandedIDs: 0000000096080100980801009a0801009c080100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -879,7 +879,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000066a958008afd000016cc0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
